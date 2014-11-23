@@ -3,6 +3,9 @@ vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
 
 # Audio BLOBS
 lib/libaudioroute.so
@@ -237,7 +240,6 @@ etc/pre_hw_config.sh
 
 # IRSC
 bin/irsc_util
-etc/sec_config
 
 # Keylayout
 usr/keylayout/gpio-keys.kl
@@ -385,10 +387,6 @@ lib/libMiscTaAccessor.so
 lib/libmiscta.so
 lib/libta.so
 
-# TFA98XX DSP
-etc/tfa98xx/coldboot.patch
-etc/tfa98xx/TFA9890.patch
-
 # Time
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
@@ -398,7 +396,3 @@ bin/clearpad_fwloader
 
 # WiFi
 bin/radish
-
-# WiFi firmware
-etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin
-etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin
